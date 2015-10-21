@@ -1,19 +1,34 @@
 package com.practica1;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
+
 
  
 public class MainActivity extends Activity {
-
+	
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+       FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        Fragmento2 frag = new Fragmento2();
+        FrameLayout v = (FrameLayout)findViewById(R.id.container);
+        if(v!=null)
+        	v.removeAllViews();
+        transaction.add(R.id.container, frag);
+        transaction.commit();
+    }
+    
+   
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
