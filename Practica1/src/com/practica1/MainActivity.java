@@ -6,6 +6,8 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 
@@ -21,11 +23,16 @@ public class MainActivity extends Activity {
        FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         Fragmento2 frag = new Fragmento2();
+        Fragmento frag2 = new Fragmento();
         FrameLayout v = (FrameLayout)findViewById(R.id.container);
-        if(v!=null)
+        FrameLayout v2 = (FrameLayout)findViewById(R.id.container2);
+        if(v!=null && v2!=null)
         	v.removeAllViews();
         transaction.add(R.id.container, frag);
+        transaction.add(R.id.container2, frag2);
         transaction.commit();
+        
+      
     }
     
    

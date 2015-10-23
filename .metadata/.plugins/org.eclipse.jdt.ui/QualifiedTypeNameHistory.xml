@@ -7,10 +7,12 @@
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentTransaction"/>
 <fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
-<fullyQualifiedTypeName name="com.practica1.R.id"/>
 <fullyQualifiedTypeName name="android.app.Fragment"/>
 <fullyQualifiedTypeName name="android.app.FragmentManager"/>
 <fullyQualifiedTypeName name="android.app.FragmentTransaction"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.practica1.R.id"/>
+<fullyQualifiedTypeName name="android.widget.FrameLayout"/>
 <fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
 </qualifiedTypeNameHistroy>
