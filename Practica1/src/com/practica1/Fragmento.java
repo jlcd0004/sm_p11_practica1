@@ -6,12 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+public class Fragmento extends Fragment {
 
-public class Fragmento extends Fragment{
-	
-	public View onCreateView(LayoutInflater i, ViewGroup c,Bundle savedInstanceState){
-		return i.inflate(R.layout.fragmento, c,false);
-		
-	 }
-	
+	public View onCreateView(LayoutInflater i, ViewGroup c,
+			Bundle savedInstanceState) {
+		return i.inflate(R.layout.fragmento, c, false);
+
+	}
+
 }

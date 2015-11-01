@@ -7,8 +7,12 @@
 <string name="presentacion">José Luis Cabeza Díaz</string>
      <string name="presentacion2">Servicios Móviles, Práctica 1</string>  
      <string name="sesion">Iniciar Sesión</string> 
-     <string name="sesion2">Inntroduzca sus datos:</string> 
+     <string name="sesion2">Introduzca:</string> 
      <string name="user">Usuario:</string>
      <string name="pass">Contraseña:</string>
      <string name="ok">Aceptar</string>
+     <string name="ip_s">IP del servidor:</string>
+     <string name="port">Puerto:</string>
+     <string name="usr">Datos:</string>
+     <string name="servicio">(Posteriormente se gestionará la conexión a un servicio remoto con estos datos)</string>
 </resources>
