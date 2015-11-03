@@ -10,6 +10,11 @@ import android.widget.FrameLayout;
 
 public class MainActivity extends Activity {
 
+	/**
+	 * Este método es el que se ejecuta al iniciar la aplicación, en él se
+	 * añaden de manera dinámica dos fragmentos, 'fragmento' y 'fragmento2' a
+	 * sus respectivos contenedores,'container2' y 'container'.
+	 * */
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,8 +27,8 @@ public class MainActivity extends Activity {
 
 		FrameLayout v = (FrameLayout) findViewById(R.id.container2);
 
-		if (v != null)
-			v.removeAllViews();
+		if (v != null)// Comruebo que 'container2' esta vacío.
+			v.removeAllViews();// Si no esta vacío elimino las vistas que tenga.
 		transaction.add(R.id.container2, frag);
 
 		transaction.add(R.id.container, frag2);

@@ -11,6 +11,11 @@ import android.widget.ImageButton;
 
 public class Fragmento2 extends Fragment {
 
+	/**
+	 * En 'fragmento2' hay un 'ImageButton'(objeto 'boton') para inicio de
+	 * sesión y con el método 'onClick' se cambia esa vista por
+	 * 'fragmento_sesion' cuando se pulse 'boton'.
+	 * */
 	public View onCreateView(LayoutInflater i, ViewGroup c,
 			Bundle savedInstanceState) {
 		View v = i.inflate(R.layout.fragmento2, c, false);

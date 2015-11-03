@@ -11,6 +11,16 @@ import android.widget.EditText;
 
 public class Fragmento_sesion extends Fragment {
 
+	/**
+	 * En 'fragmento_sesion' se presentan al usuario cuatro campos de escritura
+	 * para que introduzca su nombre de usuario,contraseña,dirección IP de la
+	 * máquina donde se ejecuta el servidor y puerto donde este escucha. Cada
+	 * uno de estos campos se asocia con un objeto de la clase 'EditText'. Al
+	 * pulsar 'button2', se obtiene el contenido de los campos de escritura y se
+	 * pasa a String para guardarlo. Posteriormente se crea un objeto de la
+	 * clase 'Intent' para cambiar la vista a 'activity_2' y pasarle los datos
+	 * obtenidos.
+	 * */
 	public View onCreateView(LayoutInflater i, ViewGroup c,
 			Bundle savedInstanceState) {
 		View v = i.inflate(R.layout.fragmento_sesion, c, false);
