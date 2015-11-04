@@ -1,6 +1,7 @@
 package com.practica1;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -22,37 +23,21 @@ public class MainActivity extends Activity {
 
 		FragmentManager fragmentManager = getFragmentManager();
 		FragmentTransaction transaction = fragmentManager.beginTransaction();
+
 		Fragmento2 frag2 = new Fragmento2();
 		Fragmento frag = new Fragmento();
 
-		FrameLayout v = (FrameLayout) findViewById(R.id.container2);
+		Fragment f = fragmentManager.findFragmentById(R.id.container);
+		Fragment f2 = fragmentManager.findFragmentById(R.id.container2);
 
-		if (v != null)// Comruebo que 'container2' esta vacío.
-			v.removeAllViews();// Si no esta vacío elimino las vistas que tenga.
-		transaction.add(R.id.container2, frag);
+		if (f == null && f2 == null) {
+			transaction.add(R.id.container2, frag);
 
-		transaction.add(R.id.container, frag2);
+			transaction.add(R.id.container, frag2);
 
-		transaction.commit();
-
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+			transaction.commit();
 		}
-		return super.onOptionsItemSelected(item);
 	}
+
+	
 }

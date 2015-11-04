@@ -15,4 +15,6 @@
      <string name="port">Puerto:</string>
      <string name="usr">Datos:</string>
      <string name="servicio">(Posteriormente se gestionará la conexión a un servicio remoto con estos datos)</string>
+     <string name="info">Grado en Ingeniería Telemática, 3º curso</string>
+     <string name="grado">Ingeniería Telemática, 3ºcurso</string>
 </resources>
